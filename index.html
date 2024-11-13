@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar"> 
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./assets/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>  
+                        <i class="fa-solid fa-arrow-right"></i> 
+                    </div>
+                </div> 
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p> 
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcast to follow</p> 
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content"> 
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./assets/backward_icon.png">  
+                    <img src="./assets/forward_icon.png" class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge nav-item dark-badge"> <i class="fa-solid fa-circle-arrow-down" style="margin-right: 5px;"></i> Install App</button>
+                    <i class="fa-regular fa-user nav-item"></i>
+                </div>
+            </div>
+
+            <h2>Recently Played</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 Global</p>
+                    <p class="card-info">Your daily updates of most played tracks ...</p> 
+                </div> 
+            </div>
+
+            <h2>Trending now near you</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/card2img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 Global</p>
+                    <p class="card-info">Your daily updates of most played tracks ...</p> 
+                </div> 
+                <div class="card">
+                    <img src="./assets/card3img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 Global</p>
+                    <p class="card-info">Your daily updates of most played tracks ...</p> 
+                </div> 
+                <div class="card">
+                    <img src="./assets/card4img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 Global</p>
+                    <p class="card-info">Your daily updates of most played tracks ...</p> 
+                </div> 
+                <div class="card">
+                    <img src="./assets/card3img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 Global</p>
+                    <p class="card-info">Your daily updates of most played tracks ...</p> 
+                </div> 
+                <div class="card">
+                    <img src="./assets/card4img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 Global</p>
+                    <p class="card-info">Your daily updates of most played tracks ...</p> 
+                </div> 
+            </div>
+
+            <h2>Featured Charts</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/card5img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 Global</p>
+                    <p class="card-info">Your daily updates of most played tracks ...</p> 
+                </div> 
+                <div class="card">
+                    <img src="./assets/card6img.jpeg" class="card-img">
+                    <p class="card-title">Top Songs - India</p>
+                    <p class="card-info">Your daily updates of most played tracks ...</p> 
+                </div> 
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 Global</p>
+                    <p class="card-info">Your daily updates of most played tracks ...</p> 
+                </div>        
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>    
+        <div class="music-player">
+            <div class="album">
+                <div class="song">
+                    <img src="./assets/card2img.jpeg" class="playing-song">
+                </div>
+                <div class="song-info">
+                    <p class="info-p1">Mahiye Jinna Sohna</p>
+                    <p class="info-p2">Darshan Raval</p>
+                </div>
+                <div class="song-feed-icon">
+                    <i class="fa-thin fa-heart"></i>
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+                
+            </div>  
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./assets/player_icon1.png" class="player-control-icon">
+                    <img src="./assets/player_icon2.png" class="player-control-icon">
+                    <img src="./assets/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                    <img src="./assets/player_icon4.png" class="player-control-icon">
+                    <img src="./assets/player_icon5.png" class="player-control-icon">    
+                </div>  
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span class="tot-time">3:33</span>
+                </div>   
+            </div>  
+            <div class="controls">
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-share"></i>
+                <label for="volume" class="volume-icon" ><img src="data:image/png;base64,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" class="volume-icon-img"></label>
+                <input type="range" id="volume">
+            </div>       
+        </div>
+    </div>
+    
+    
+<body>
+</html> 
